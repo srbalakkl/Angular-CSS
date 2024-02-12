@@ -1,0 +1,60 @@
+<style>
+  h1, h2 { /*Combined Selector*/
+    color: rebeccapurple;
+  }
+
+  div > p {
+    /*Child Selector: This will select all the direct child element
+       instead of grand child or great grand child
+       (i.e) it will select the items that is/are one level deep only.*/
+    color: blue;
+  }
+
+  li.done { /*Chained Selector:*/
+    color: seagreen;
+  }
+
+  div li {
+    /*Decedent Selector: Select all the child including
+        direct child, grand child or great grand child. */
+    color: red;
+  }
+
+
+  li[draggable] { /*<- Attribute selector in css. */
+    color: black;
+    background-color: green;
+  }
+
+  /**** CSS WITH MOST SPECIFICITY WILL HAVE MOST PRIORITY. ****/
+
+  p {
+    background-color: blue;
+  }
+
+  .test { /*<- Has higher priority then element tag (eg:p tag)*/
+    background-color: darkgray;
+  }
+
+  p[draggable] { /* <- Has higher priority then the element (p) and class tag (.test). */
+    background-color: darkgreen;
+  }
+
+
+</style>
+
+<h1>To Do List</h1>
+<h2>Monday</h2>
+<div class="box">
+  <p class="done">Do these things today!</p>
+  <ul class="list">
+    <li draggable="true">Wash Clothes</li>
+    <li class="done">Read</li>
+    <li class="done">Maths Questions</li>
+  </ul>
+</div>
+
+<ul>
+  <p class="done">Other items</p>
+</ul>
+<p class="test" draggable="true">The best preparation for tomorrow is doing your best today.</p>

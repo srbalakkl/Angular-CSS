@@ -1,0 +1,69 @@
+<style>
+  .flex-container {
+    border: 1px solid green;
+    display: flex;
+    gap: 10px;
+  }
+
+  .flex-container > * {
+    border: 1px solid blue;
+    width: 100px; /*<- the width will be 100px only until the window shrink below 100px. */
+    /* The above width will be ignored if the FLEX-BASIS is set.*/
+    /*flex-basis: 200px;!*<- Get more priority then width *!*/
+    /*min-width: 300px; !*<-This min-width make the flex-basis to be ignored.*!*/
+    flex: 1;
+    /*
+       Note: the below 3 properties are as same as flex1
+
+       flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;*/
+  }
+
+  .ration-parent {
+    display: flex;
+    gap: 10px;
+  }
+
+  .ration-parent > * {
+    height: 300px;
+  }
+
+  .ration-child1 {
+    flex: 1; /*<- simplest way to fill the child value based on the ration.*/
+    background-color: aqua;
+  }
+
+  .ration-child2 {
+    flex: 2;
+    background-color: lightblue;
+  }
+
+  .ration-child3 {
+    flex: 3;
+    background-color: aquamarine;
+  }
+
+</style>
+<p>flex-sizing works!</p>
+
+<div class="flex-container">
+  <div>Home</div>
+  <div>About</div>
+  <div>Contact Us</div>
+  <div>The best programmer in the world</div>
+</div>
+
+
+<h1>To fill the flex box with even ration then use the .flex-ratio class</h1>
+<div class="ration-parent">
+  <div class="ration-child1">
+    flex:1;
+  </div>
+  <div class="ration-child2">
+    flex:2;
+  </div>
+  <div class="ration-child3">
+    flex:3;
+  </div>
+</div>

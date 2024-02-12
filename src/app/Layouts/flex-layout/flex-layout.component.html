@@ -1,0 +1,69 @@
+<p>flex-layout works!</p>
+
+<style>
+  .flexbox-container {
+    height: 700px;
+    /*width: 500px*/
+    /*display: inline-flex;*/ /*< To display the text in the inline direction.-*/
+    display: flex;
+    flex-direction: row;/* <- Default direction is row.*/
+    background-color: yellowgreen;
+    align-items: center;/* <- To center alignment in cross axis.  */
+    justify-content: center;/* <- To center alignment in main axis. */
+    /*flex-wrap: wrap;*/
+    align-content: flex-start;
+    /*flex-basis: 1000px;*/
+  }
+
+  /*.flexbox-container > * {*/
+  /*  background-color: teal;*/
+  /*}
+  */
+
+  .flexbox-item {
+    flex-basis: 33.3%; /*<- Increased the main axis (note:main axis is based on flex direction) width of all flex properties of children*/
+    width: 200px;
+    /*height: 200px;*/  /* <- If you don't specify this item  height then box will take the entire
+    height of its container especially if ALIGN-ITEMS:CENTER is not specified. */
+    margin: 10px;
+    border: 3px solid black;
+    /*flex-wrap: wrap;*/
+    background-color: aqua;
+    /*flex-grow: 1;*/ /* <- To get an equal space on all 3 elements. */
+  }
+
+  .flexbox-item-1 {
+    /*min-height: 100px;*/
+    /*min-width: 300px;*/
+    flex-shrink: 1;/* 0 = It won't shrink,*/
+    height: 100px;
+  }
+
+  .flexbox-item-2 {
+    /*flex-grow: 1;*/
+    /*min-height: 100px;*/
+    /*min-width: 300px;*/
+    flex-shrink: 0;
+  }
+
+  .flexbox-item-3 {
+    /*min-height: 100px;*/
+    /*min-width: 300px;*/
+  }
+
+  div {
+    border: 5px solid blue;
+  }
+
+  div.flexbox-item{
+    border: 10px solid rebeccapurple;
+  }
+</style>
+
+
+<div class="flexbox-container">
+  <div class="flexbox-item flexbox-item-1">Flex Item 1 8888888888</div>
+  <div class="flexbox-item flexbox-item-2">Flex Item 2 8888888888 </div>
+  <div class="flexbox-item flexbox-item-3">Flex Item 3 8888888888</div>
+</div>
+

@@ -1,0 +1,38 @@
+<p>css-positioning works!</p>
+
+<style>
+  h3 {
+
+  }
+
+  .position {
+    /*position: static;*/ /* <- Does not support top bottom left right property*/
+    position: relative; /* <- Support all top bottom left right & z-index property*/
+    /*position: absolute; !* <- Position relative to the nearest positioned ancestor or top left cornet of the view port. *!*/
+    /*position: fixed; !*<- Position top left corner of the view port/browser window as always fixed even if scroll the browser window.*!*/
+    background-color: seagreen;
+    top: 50px;
+    left: 50px;
+    height: 200px;
+    width: 400px;
+    border: 5px solid red;
+  }
+</style>
+
+<!--<div>-->
+<!--  <h3>4 types of css positioning </h3>-->
+
+<!--  <ul>-->
+<!--    <li>Static (Default positioning)</li>-->
+<!--    <li>Absolute</li>-->
+<!--    <li>Relative</li>-->
+<!--    <li>Fixed</li>-->
+<!--  </ul>-->
+
+<!--  <div class="position">-->
+
+<!--  </div>-->
+
+<!--</div>-->
+
+<app-position-test></app-position-test>
