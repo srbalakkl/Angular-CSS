@@ -1,0 +1,124 @@
+<p>grid-layout works!</p>
+<style>
+  .grid-container {
+    display: grid;
+    /*grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;*/
+    grid-template-columns: repeat(8,100px); /*<- Alternative to the above command. */
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    /*grid-template: 100px auto / 150px auto;*/ /*<- Combination above grid-template-columns & grid-template-rows*/
+    gap: 5px;
+  }
+
+  .grid-container > * {
+    /*width: 100px;*/
+    /*height: 100px;*/
+  }
+
+  .white {
+    background-color: #f0d9b5;
+  }
+
+  .black {
+    background-color: #b58863;
+  }
+
+
+  /* Another way of using the grid,
+  But this is NOT suitable for responsive design.
+  USE FR (e.g: 1fr or 2fr) property in grid-template for responsive design
+  */
+
+  /*  .grid-container {
+      width: 800px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+      !*The above 2 lines can be shortened by using the following line. *!
+      !*grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*!
+
+    }
+
+    .grid-container > * {
+      width: 100px;
+      height: 100px;
+    }
+
+    .white {
+      background-color: #f0d9b5;
+    }
+
+    .black {
+      background-color: #b58863;
+    }*/
+
+
+</style>
+
+
+<div class="grid-container">
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+</div>

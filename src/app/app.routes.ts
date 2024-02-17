@@ -11,6 +11,8 @@ import {FlexSizingComponent} from "./Layouts/flex-layout/flex-sizing/flex-sizing
 import {
   FlexLayoutPricingTableComponent
 } from "./Training/flex-layout-pricing-table/flex-layout-pricing-table.component";
+import {GridLayoutComponent} from "./Layouts/grid-layout/grid-layout.component";
+import {GridSizingComponent} from "./Layouts/grid-layout/grid-sizing/grid-sizing.component";
 
 export const routes: Routes = [
   {path:'flexLayout',component:FlexLayoutComponent},
@@ -22,5 +24,7 @@ export const routes: Routes = [
   {path:'css-margins',component:CssMarginsComponent},
   {path:'inlineMargin',component:MarginInlineComponent},
   {path:'flex-sizing',component:FlexSizingComponent},
-  {path:'pricing_table',component:FlexLayoutPricingTableComponent}
+  {path:'pricing_table',component:FlexLayoutPricingTableComponent},
+  {path:'grid-layout',component:GridLayoutComponent},
+  {path:'grid-sizing',component:GridSizingComponent}
 ];

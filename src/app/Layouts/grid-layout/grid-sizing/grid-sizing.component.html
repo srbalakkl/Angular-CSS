@@ -1,0 +1,56 @@
+<p>grid-sizing works!</p>
+
+<style>
+  .grid-container {
+    border: 2px solid saddlebrown;
+    display: grid;
+    /*grid-template-columns: 100px auto;*/
+    /* <- In column the AUTO property takes the entire available width of the screen.
+        * For column AUTO is going to be 100% of the width
+        */
+
+    grid-template-columns: minmax(200px, 400px) auto;
+    /*<- */
+
+    grid-template-rows: 150px auto;
+
+    /*<- In row the AUTO property takes the ITEMS HEIGHT
+    (not take entire width of the screen like grid-row) of the screen
+    * For Rows AUTO is going to FIT THE CONTENT's height.
+    */
+
+
+    /*grid-template: 100px auto / 150px auto;*/ /*<- Combination above grid-template-columns & grid-template-rows*/
+    grid-auto-rows: 300px; /*<- for all extra grid items added.*/
+
+    /*grid-gap: 10px;*/
+  }
+
+  .grid-container > * {
+    /*height: 100px;*/
+  }
+
+  .grid-item1 {
+    background-color: #f0d9b5;
+  }
+
+  .grid-item2 {
+    background-color: aqua;
+  }
+
+  .grid-item3 {
+    background-color: chartreuse;
+  }
+
+  .grid-item4 {
+    background-color: rebeccapurple;
+  }
+
+</style>
+
+<div class="grid-container">
+  <div class="grid-item1">Item 1</div>
+  <div class="grid-item2">Item 2</div>
+  <div class="grid-item3">Item 3</div>
+  <div class="grid-item4">Item 4</div>
+</div>
