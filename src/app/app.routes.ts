@@ -13,6 +13,11 @@ import {
 } from "./Training/flex-layout-pricing-table/flex-layout-pricing-table.component";
 import {GridLayoutComponent} from "./Layouts/grid-layout/grid-layout.component";
 import {GridSizingComponent} from "./Layouts/grid-layout/grid-sizing/grid-sizing.component";
+import {GridSizingTrainingComponent} from "./Training/grid-sizing-training/grid-sizing-training.component";
+import {GridPlacementTrainingComponent} from "./Training/grid-placement-training/grid-placement-training.component";
+import {GridColumnPlacementComponent} from "./Training/grid-column-placement/grid-column-placement.component";
+import {GridCellPlacementComponent} from "./Training/grid-cell-placement/grid-cell-placement.component";
+import {GridOverlapingTrainingComponent} from "./Training/grid-overlaping-training/grid-overlaping-training.component";
 
 export const routes: Routes = [
   {path:'flexLayout',component:FlexLayoutComponent},
@@ -26,5 +31,10 @@ export const routes: Routes = [
   {path:'flex-sizing',component:FlexSizingComponent},
   {path:'pricing_table',component:FlexLayoutPricingTableComponent},
   {path:'grid-layout',component:GridLayoutComponent},
-  {path:'grid-sizing',component:GridSizingComponent}
+  {path:'grid-sizing',component:GridSizingComponent},
+  {path:'gridSizingExample',component:GridSizingTrainingComponent},
+  {path:'gridPlacement',component:GridPlacementTrainingComponent},
+  {path:'gridColumnPlacement',component:GridColumnPlacementComponent},
+  {path:'gridCellPlacement',component:GridCellPlacementComponent},
+  {path:'gridOverlapping',component:GridOverlapingTrainingComponent}
 ];

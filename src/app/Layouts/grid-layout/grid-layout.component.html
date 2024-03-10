@@ -2,10 +2,11 @@
 <style>
   .grid-container {
     display: grid;
+    /*grid-template: repeat(8, 100px) / repeat(8, 100px);<- grid-template = grid-template-rows / grid-template-columns*/
     /*grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;*/
-    grid-template-columns: repeat(8,100px); /*<- Alternative to the above command. */
+    grid-template-columns: repeat(8, 100px); /*<- Alternative to the above command. */
     grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
-    /*grid-template: 100px auto / 150px auto;*/ /*<- Combination above grid-template-columns & grid-template-rows*/
+    /*grid-template: 100px auto / 150px auto;*/ /*<- grid-template = grid-template-rows / grid-template-columns*/
     gap: 5px;
   }
 
@@ -28,33 +29,37 @@
   USE FR (e.g: 1fr or 2fr) property in grid-template for responsive design
   */
 
-  /*  .grid-container {
-      width: 800px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /*    .grid-container {
+        width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
-      !*The above 2 lines can be shortened by using the following line. *!
-      !*grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*!
+        !*The above 2 lines can be shortened by using the following line. *!
+        !*grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*!
 
-    }
+      }
 
-    .grid-container > * {
-      width: 100px;
-      height: 100px;
-    }
+      .grid-container > * {
+        width: 100px;
+        height: 100px;
+      }
 
-    .white {
-      background-color: #f0d9b5;
-    }
+      .white {
+        background-color: #f0d9b5;
+      }
 
-    .black {
-      background-color: #b58863;
-    }*/
+      .black {
+        background-color: #b58863;
+      }*/
 
 
 </style>
 
+<h2>Grid Definition</h2>
+<p>One of the major difference of grid over flex is grid is 2D design layout i.e because we can position owr element in
+  by using both the grid column </p>
+<p>Note: span property in grid doesn't support -ve values.</p>
 
 <div class="grid-container">
   <div class="white"></div>

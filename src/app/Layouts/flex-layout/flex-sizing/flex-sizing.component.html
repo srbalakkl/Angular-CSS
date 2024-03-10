@@ -13,7 +13,7 @@
     /*min-width: 300px; !*<-This min-width make the flex-basis to be ignored.*!*/
     flex: 1;
     /*
-       Note: the below 3 properties are as same as flex1
+       Note: the below 3 properties are as same as flex:1
 
        flex-grow: 1;
         flex-shrink: 1;
@@ -30,7 +30,7 @@
   }
 
   .ration-child1 {
-    flex: 1; /*<- simplest way to fill the child value based on the ration.*/
+    flex: 1; /*<- (flex-grow:1,flex-shrink:1,flex-basis:0) this wil allow to grow and shrink*/
     background-color: aqua;
   }
 
