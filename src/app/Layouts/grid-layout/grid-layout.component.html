@@ -57,8 +57,11 @@
 </style>
 
 <h2>Grid Definition</h2>
-<p>One of the major difference of grid over flex is grid is 2D design layout i.e because we can position owr element in
-  by using both the grid column </p>
+<p>One of the major difference of grid over flex is grid is a <b>2D</b> design layout because we can position owr elements in
+  by using both the grid column & grid row as well </p>
+<p>grid-column-end:-1 like -ve value properties can help you to create dynamic end position of grid column/rows</p>
+<p>If grid-column-start:4 is higher than grid-column-end:2 then values will be flipped (i.e g-c-s:2,g-c-e:4) automatically.</p>
+<p>If you don't specify g-c-s & g-c-e property then the default / initial value 'auto' will be applied automatically. </p>
 <p>Note: span property in grid doesn't support -ve values.</p>
 
 <div class="grid-container">
