@@ -1,32 +1,43 @@
 <p>flag-drawing works!</p>
 <style>
+
+  /*.container {*/
+  /*  height: 100dvh;*/
+  /*}*/
+
   .row1 {
-    height: 33.3%;
+    height: 20dvh;
     width: 100%;
-    color: khaki;
-    border: 1px solid blue;
     background-color: darkkhaki;
+    position: relative;
   }
 
   .row2 {
-    height: 33.3%;
+    height: 20dvh;
+    width: 100%;
     background-color: whitesmoke;
+    position: relative;
   }
 
   .row3 {
-    height: 33.3%;
+    height: 20dvh;
+    width: 100%;
     background-color: green;
+    position: relative;
   }
 
   .row2 > div {
     height: inherit;
-    width: 10%;
+    width: 25%;
     border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    left: 40%;
   }
 
 </style>
 
-<div>
+<div class="container">
   <!--
   specify height,
   html login page.
@@ -36,8 +47,7 @@
   </div>
 
   <div class="row2">
-    <div>
-    </div>
+    <div></div>
   </div>
 
   <div class="row3">
