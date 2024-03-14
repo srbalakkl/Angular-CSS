@@ -21,8 +21,10 @@
   */
 
   .flexbox-item {
-    flex-basis: 33.3%; /*<- Increased the main axis (note:main axis is based on flex direction) width of all flex properties of children*/
-    width: 200px;
+    flex-basis: 33.3%; /*<- Increased the main axis (note:main axis is based on flex direction) width of all flex properties of children.
+    since the width of flex-basis is based on main axis (i.e based on main-axis mean width will be changed for both column & row direction as well).
+     It will be very useful when we change the flex-direction using media query. */
+    width: 200px;/*<- This property is ignored because flex-basis has higher priority then this.*/
     /*height: 200px;*/
     /* <- If you don't specify this item  height then box will take the entire
       height of its container especially if ALIGN-ITEMS:CENTER is not specified. */
