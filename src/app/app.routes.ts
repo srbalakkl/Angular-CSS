@@ -18,6 +18,8 @@ import {GridPlacementTrainingComponent} from "./Training/grid-placement-training
 import {GridColumnPlacementComponent} from "./Training/grid-column-placement/grid-column-placement.component";
 import {GridCellPlacementComponent} from "./Training/grid-cell-placement/grid-cell-placement.component";
 import {GridOverlapingTrainingComponent} from "./Training/grid-overlaping-training/grid-overlaping-training.component";
+import {IntrinsicSizingComponent} from "./intrinsic-sizing/intrinsic-sizing.component";
+import {MinMaxClampSizingComponent} from "./intrinsic-sizing/min-max-clamp-sizing/min-max-clamp-sizing.component";
 
 export const routes: Routes = [
   {path:'flexLayout',component:FlexLayoutComponent},
@@ -36,5 +38,7 @@ export const routes: Routes = [
   {path:'gridPlacement',component:GridPlacementTrainingComponent},
   {path:'gridColumnPlacement',component:GridColumnPlacementComponent},
   {path:'gridCellPlacement',component:GridCellPlacementComponent},
-  {path:'gridOverlapping',component:GridOverlapingTrainingComponent}
+  {path:'gridOverlapping',component:GridOverlapingTrainingComponent},
+  {path:'cssIntrinsicSizing',component:IntrinsicSizingComponent},
+  {path:'IntrinsicMinMaxClamp',component:MinMaxClampSizingComponent}
 ];

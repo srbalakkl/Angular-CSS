@@ -1,0 +1,51 @@
+<style>
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background-color: #b58863;
+    padding: 1rem; /*<- REM value = px we want / User Agents px*/
+    height: 200px;
+
+    /*width: 40%;*/
+    /*max-width: 400px;*/
+
+    /*width: max(400px, 40%);!*<- combination of above 2*!*/
+    /*width: max(400px + 5%, 40%);!*<- + , - , * and / operators can also be used with min,max & clamp commands./*/
+
+    /*width: min(500px, 20%);*/
+    /* <- Combination of 'width: 600px; min-width:400px'
+    * min() will take minimum value among those value
+    */
+
+    /*width: min(500px,600px,400px);*/ /* <- Width property support multiple value but smallest among these will be selected as the width.*/
+
+    /*width: max(500px,600px);*/ /* <- Very much like min() function but it choose maximum value instead of minimum. */
+
+    width: clamp(150px, 50%, 400px);
+    /*<- clamp(minimum value, preferred value, maximum value)
+     * similar to min & max except if has preferred value.
+     */
+
+
+
+  }
+</style>
+
+<p>min-max-clamp-sizing works!</p>
+
+<div class="main-container">
+  <div class="container">
+    <h1 class="main-title">My Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum facere iste itaque iusto officia
+      quia quisquam sint. Ipsam nemo nesciunt obcaecati quasi? Deserunt, dolor doloremque magnam numquam provident
+      tempora!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum facere iste itaque iusto officia
+      quia quisquam sint. Ipsam nemo nesciunt obcaecati quasi? Deserunt, dolor doloremque magnam numquam provident
+      tempora!</p>
+  </div>
+</div>

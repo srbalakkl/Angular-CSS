@@ -1,0 +1,52 @@
+<p>intrinsic-sizing works!</p>
+
+<style>
+  h1 {
+    background-color: #86ef86;
+    margin: 0;
+  }
+
+  p {
+    /*width: max-content;*/
+    margin: 0;
+  }
+
+  /*div > div {*/
+  /*  background-color: #8fab7b;*/
+  /*  width: 300px;*/
+  /*  height: 300px;*/
+  /*  flex-direction: column;*/
+  /*}*/
+
+  .container {
+    font-size: 20px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+  }
+
+  .main-title {
+    color: red;
+    font-size: 6em;
+    /*The min-content,max-content,fit-content sizing keyword represents the intrinsic width of the content*/
+
+    /*width: min-content;!*>- The min-content sizing keyword represents the intrinsic minimum width of the content*!*/
+    /* For text content this means that the content will take all soft-wrapping opportunities, becoming as small as the longest word.*/
+
+    /*width: max-content;!*<- Represent the maximum width of the content (i.e It'll 'not wrap' when resizing the windows.)*!*/
+
+    width: fit-content; /*<- The box will use the available space, but never more than max-content.*/
+  }
+
+  p {
+    /*width: max-content;*/ /*Note: this will override the default width:100%; property of p tag.*/
+  }
+
+
+</style>
+
+<div class="container">
+  <h1 class="main-title">My Title</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum facere iste itaque iusto officia
+    quia quisquam sint. Ipsam nemo nesciunt obcaecati quasi? Deserunt, dolor doloremque magnam numquam provident
+    tempora!</p>
+</div>
