@@ -28,7 +28,9 @@
 
     width: clamp(150px, 50%, 400px);
     /*<- clamp(minimum value, preferred value, maximum value)
-     * similar to min & max except if has preferred value.
+     * In this example: min=150px, preferred=50%, max=400px.
+     * The preferred value here is 50% (the middle argument).
+     * Similar to min() & max(), except it has a preferred value that the browser aims to use within the min/max bounds.
      */
 
 
