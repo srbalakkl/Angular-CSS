@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import {Routes} from '@angular/router';
 import {FlexLayoutComponent} from "./Layouts/flex-layout/flex-layout.component";
 import {CssSelectorComponent} from "./css-selector/css-selector.component";
 import {CssPositioningComponent} from "./css-positioning/css-positioning.component";
@@ -20,25 +20,27 @@ import {GridCellPlacementComponent} from "./Training/grid-cell-placement/grid-ce
 import {GridOverlapingTrainingComponent} from "./Training/grid-overlaping-training/grid-overlaping-training.component";
 import {IntrinsicSizingComponent} from "./intrinsic-sizing/intrinsic-sizing.component";
 import {MinMaxClampSizingComponent} from "./intrinsic-sizing/min-max-clamp-sizing/min-max-clamp-sizing.component";
+import {MediaAndContainerQueriesComponent} from "./media-and-container-queries/media-and-container-queries.component";
 
 export const routes: Routes = [
-  {path:'flexLayout',component:FlexLayoutComponent},
-  {path:'cssSelector',component:CssSelectorComponent},
-  {path:'cssPositioning',component:CssPositioningComponent},
-  {path:'cssSpecificity',component:CssSpecificityComponent},
-  {path:'cssFlag',component:FlagDrawingComponent},
-  {path:'cssFloat',component:CssFloatComponent},
-  {path:'css-margins',component:CssMarginsComponent},
-  {path:'inlineMargin',component:MarginInlineComponent},
-  {path:'flex-sizing',component:FlexSizingComponent},
-  {path:'pricing_table',component:FlexLayoutPricingTableComponent},
-  {path:'grid-layout',component:GridLayoutComponent},
-  {path:'grid-sizing',component:GridSizingComponent},
-  {path:'gridSizingExample',component:GridSizingTrainingComponent},
-  {path:'gridPlacement',component:GridPlacementTrainingComponent},
-  {path:'gridColumnPlacement',component:GridColumnPlacementComponent},
-  {path:'gridCellPlacement',component:GridCellPlacementComponent},
-  {path:'gridOverlapping',component:GridOverlapingTrainingComponent},
-  {path:'cssIntrinsicSizing',component:IntrinsicSizingComponent},
-  {path:'IntrinsicMinMaxClamp',component:MinMaxClampSizingComponent}
+  {path: 'flexLayout', component: FlexLayoutComponent},
+  {path: 'cssSelector', component: CssSelectorComponent},
+  {path: 'cssPositioning', component: CssPositioningComponent},
+  {path: 'cssSpecificity', component: CssSpecificityComponent},
+  {path: 'cssFlag', component: FlagDrawingComponent},
+  {path: 'cssFloat', component: CssFloatComponent},
+  {path: 'css-margins', component: CssMarginsComponent},
+  {path: 'inlineMargin', component: MarginInlineComponent},
+  {path: 'flex-sizing', component: FlexSizingComponent},
+  {path: 'pricing_table', component: FlexLayoutPricingTableComponent},
+  {path: 'grid-layout', component: GridLayoutComponent},
+  {path: 'grid-sizing', component: GridSizingComponent},
+  {path: 'gridSizingExample', component: GridSizingTrainingComponent},
+  {path: 'gridPlacement', component: GridPlacementTrainingComponent},
+  {path: 'gridColumnPlacement', component: GridColumnPlacementComponent},
+  {path: 'gridCellPlacement', component: GridCellPlacementComponent},
+  {path: 'gridOverlapping', component: GridOverlapingTrainingComponent},
+  {path: 'cssIntrinsicSizing', component: IntrinsicSizingComponent},
+  {path: 'IntrinsicMinMaxClamp', component: MinMaxClampSizingComponent},
+  {path: 'mediaAndContainerQueries', component: MediaAndContainerQueriesComponent},
 ];
