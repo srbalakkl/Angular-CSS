@@ -20,7 +20,8 @@ import {GridCellPlacementComponent} from "./Training/grid-cell-placement/grid-ce
 import {GridOverlapingTrainingComponent} from "./Training/grid-overlaping-training/grid-overlaping-training.component";
 import {IntrinsicSizingComponent} from "./intrinsic-sizing/intrinsic-sizing.component";
 import {MinMaxClampSizingComponent} from "./intrinsic-sizing/min-max-clamp-sizing/min-max-clamp-sizing.component";
-import {MediaAndContainerQueriesComponent} from "./media-and-container-queries/media-and-container-queries.component";
+import {MediaQueriesComponent} from "./media-queries/media-queries.component";
+import {ContainerQueriesComponent} from "./container-queries/container-queries.component";
 
 export const routes: Routes = [
   {path: 'flexLayout', component: FlexLayoutComponent},
@@ -42,5 +43,6 @@ export const routes: Routes = [
   {path: 'gridOverlapping', component: GridOverlapingTrainingComponent},
   {path: 'cssIntrinsicSizing', component: IntrinsicSizingComponent},
   {path: 'IntrinsicMinMaxClamp', component: MinMaxClampSizingComponent},
-  {path: 'mediaAndContainerQueries', component: MediaAndContainerQueriesComponent},
+  {path: 'mediaQueries', component: MediaQueriesComponent},
+  {path: 'containerQueries', component: ContainerQueriesComponent},
 ];

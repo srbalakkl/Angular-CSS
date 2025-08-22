@@ -1,0 +1,28 @@
+<p>media-queries works!</p>
+
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .container > div {
+    width: 700px;
+    height: 700px;
+    background-color: aqua;
+  }
+
+  @media (max-width: 600px) {/*or @media (width >= 600px) */
+    .container > div {
+      background-color: rebeccapurple;
+    }
+  }
+</style>
+
+
+<div class="container">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>

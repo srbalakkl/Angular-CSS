@@ -1,0 +1,73 @@
+<p>container-queries works!</p>
+
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    background-image: radial-gradient(
+      50% 50% at center top,
+      rgba(0, 0, 0, 0.66),
+      rgb(38, 38, 38)
+    ),
+    linear-gradient(rgb(255, 255, 255), rgb(38, 38, 38));
+    color: hsl(0 0% 100%);
+    display: grid;
+    font-family: Montserrat, sans-serif;
+    font-size: 200%;
+    font-weight: 800;
+    height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+    place-items: center;
+    text-align: center;
+    text-shadow: 0 1px 1px hsl(0 0% 0%);
+    max-width: 100%;
+  }
+
+  .parent {
+    background: hsl(0 0% 30%);
+    border: 5px solid hsl(0 0% 0%);
+    container-name: parent;
+    container-type: inline-size;
+    /*container: parent / inline-size;<- shorthand property of container-name and container-type*/
+    display: grid;
+    padding: 1.5rem;
+    place-items: center;
+    width: min(100%, 80ch);
+  }
+
+  .child {
+    background-color: #ff7a18;
+    border: 5px solid hsl(0 0% 0%);
+    padding: 1.5rem;
+    position: relative;
+    width: 100cqi;
+
+    &::before {
+      content: "I'm Orange";
+      inset: 3px 0;
+      position: absolute;
+    }
+  }
+
+  @container parent (width > 30ch) {
+    .child {
+      background: linear-gradient(
+        130deg,
+        #ff7a18,
+        #af002d 41.07%,
+        #319197 76.05%
+      );
+      width: 50cqi;
+
+      &::before {
+        content: "I'm a rainbow!";
+      }
+    }
+  }
+
+</style>
+
+<div class="parent">Container
+  <div class="child"></div>
+</div>
